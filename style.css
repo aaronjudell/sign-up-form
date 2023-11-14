@@ -2,3 +2,22 @@
     font-family: "Norse-bold";
     src: url(Norse-Bold.otf) format("opentype")
 }
+
+* {
+    margin: 0;
+}
+
+body {
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.logo {
+    font-family: "Norse-bold", Arial, sans-serif;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
