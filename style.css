@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 
 body {
@@ -63,26 +64,36 @@ body {
 
 .top {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-color: rgb(245,245,245);
     font-size: 1.5rem;
-    margin-bottom: 20px;
-    padding: 0px 100px 0px 50px;
+    padding: 20px 100px 50px 50px;
 }
 
-.top > p {
-    margin-bottom: 20px;
+.top p {
+    padding-bottom: 20px;
+    max-width: 80%;
 }
 
 .middle {
     flex: 1;
-    margin-bottom: 20px;
+    padding: 20px 100px 20px 50px;
 }
 
-.middle span {
+.middle > h3 {
     font-size: 1.5rem;
+}
+
+#sample-form {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bottom {
     flex: 1;
     background-color: rgb(245,245,245);
+    padding: 20px 100px 20px 50px;
 }
