@@ -11,7 +11,8 @@
 
 body {
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +21,7 @@ body {
 .left-side {
     background-image: url("lake.jpeg");
     background-position: center;
+    background-size: cover;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -84,12 +86,45 @@ body {
 
 .middle > h3 {
     font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-#sample-form {
-    max-width: 80%;
+#sample-form > div {
     display: flex;
     flex-wrap: wrap;
+    flex: 0 48%;
+}
+
+#sample-form > div > div {
+    margin-right: 20px;
+}
+
+#sample-form label {
+    font-size: 0.7rem;
+    display: block;
+    margin-bottom: 2px;
+}
+
+#sample-form input {
+    width: 100%;
+    max-width: 250px;
+    border: thin solid #E5E7EB;
+    padding: 2px 4px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+#sample-form input:focus {
+    border: thin solid blue;
+}
+
+#sample-form > div:nth-child(2n) {
+    margin-right: 0;
+}
+
+.error {
+    border: thin solid red;
 }
 
 .bottom {
