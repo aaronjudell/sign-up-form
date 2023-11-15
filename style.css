@@ -127,6 +127,14 @@ body {
     border: thin solid red;
 }
 
+#sample-form input:invalid {
+    border: thin solid red;
+}
+
+#sample-form input:focus:invalid {
+    border: thin solid red;
+}
+
 .bottom {
     flex: 1;
     background-color: rgb(245,245,245);
